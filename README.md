@@ -1,17 +1,26 @@
 # TypeScript bug: LF newlines in template strings needlessly escaped
 
+This repository is a reproduction for a
+[TypeScript bug](https://github.com/microsoft/TypeScript/issues/59150)
+
 ## Reproduction
 
-Install TypeScript:
+1. Clone this repository:
 
-```bash
-npm install
-```
+   ```bash
+   git clone https://github.com/maxpatiiuk/typescript-bug-needless-lf-escaping
+   ```
 
-Run the minimal reproduction:
+2. Install TypeScript:
 
-```bash
-node index.js
-```
+   ```bash
+   npm install
+   ```
+
+3. Run the minimal reproduction:
+
+   ```bash
+   node index.js
+   ```
 
 Expected to get `\n`. Instead got `\\n`
